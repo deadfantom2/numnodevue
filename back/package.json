@@ -1,0 +1,20 @@
+{
+  "name": "back",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "back": "nodemon ./bin/www",
+    "client": "npm run serve --prefix ../",
+    "start": "concurrently \"npm run back\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "connect-mongo": "^3.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-mongo-db": "^2.0.4",
+    "mongodb": "^3.3.2",
+    "morgan": "~1.9.1"
+  }
+}
